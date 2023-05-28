@@ -1,0 +1,92 @@
+{
+    "layer": "top",
+
+    "modules-left": ["custom/os", "sway/workspaces", "sway/mode", "custom/bitcoin"],
+    "modules-center": ["clock"],
+    "modules-right": ["cava", "pulseaudio", "network", "battery", "custom/power"],
+
+	"custom/os": {
+		"tooltip": false,
+		"format": "",
+		"on-click": "rofi -show drun",
+	},
+
+	"sway/workspaces": {
+		"format": "{icon}",
+		"format-icons": {
+			"1"	: "",
+			"2"	: "",
+			"3"	: "3",
+			"4"	: "",
+			"5"	: "",
+			"6"	: "6",
+			"7"	: "",
+			"8"	: "",
+			"9"	: "9",
+			"10": "",
+		},
+		"persistent_workspaces": {
+			"1"	: [],
+			"2"	: [],
+			"3"	: [],
+			"4"	: [],
+			"5"	: [],
+			"6"	: [],
+			"7"	: [],
+			"8"	: [],
+			"9"	: [],
+			"10": [],
+		},
+	},
+    "sway/mode": {
+		"tooltip": false,
+        "format": "",
+    },
+
+	"custom/bitcoin": { /* add price */
+		"tooltip": false,
+		"format": "",
+	},
+
+	"clock": {
+    	"format": " {:%A, %d %B %Y  %R}",
+    	"tooltip-format": "{calendar}",
+	},
+
+	"cava": {
+
+	},
+    "pulseaudio": {
+		"format": "{icon}{volume}%",
+		"format-muted": " muted",
+		"format-icons": {
+			"speaker": " ",
+			"default": [" ", " ", " "],
+		},
+		"scroll-step": 10.0,
+    },
+
+	"network": {
+		"interval": 15,
+		"format-ethernet": " {bandwidthTotalBits}",
+		"format-wifi": "{icons}{essid} ({signalStrength}%)",
+		"format-disconnected": " Disconnected",
+		"format-icons": [" ", " ", " "],
+		"tooltip-format": " {bandwidthUpBits}\n {bandwidthDownBits}",
+    },
+    "battery": {
+        "states": {
+            "warning": 70,
+            "critical": 30,
+        },
+        "format": "{icon}{capacity}%",
+        "format-charging": " {capacity}%",
+        "format-icons": [" ", " ", " ", " ", " "],
+    },
+
+	"custom/power": {
+		"tooltip": false,
+		"format": "",
+		"on-click": "~/.config/waybar/script/power.sh",
+	},
+}

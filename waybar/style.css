@@ -1,0 +1,109 @@
+/* THEMES */
+@define-color black-r	#111111;
+@define-color black-l	#4c4c4c;
+@define-color white-r	#ffffff;
+
+@define-color ice		#00edff;
+@define-color green		#8db800;
+@define-color yellow	#ffd800;
+@define-color red		#fe0000;
+
+@define-color bitcoin	#f7931a;
+@define-color fedora	#4e9bd5;
+
+/* RESET */
+* {
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+
+    font: 600 13px JetBrains Mono;
+}
+
+#waybar {
+    background: transparent;
+}
+
+#custom-os,
+#workspaces,
+#mode,
+#custom-bitcoin,
+#clock,
+#cava,
+#pulseaudio,
+#network,
+#battery,
+#custom-power {
+	margin: 7px 5px;
+	border-radius: 20px;
+	padding: 3px 12px;
+}
+
+/* MODULES-LEFT */
+#custom-os {
+	padding-right: 0;
+	font-size: 24px;
+	color: @fedora;
+}
+
+#workspaces {
+    background: @black-r;
+}
+
+#workspaces button {
+	padding: 0 7px;
+    background: transparent;
+	color: @black-l;
+}
+
+#workspaces button:hover {
+    box-shadow: inherit;
+    color: @white-r;
+}
+
+#workspaces button.focused {
+    color: @white-r;
+}
+
+#mode {
+	padding: 0;
+	font-size: 16px;
+	color: @white-r;
+}
+
+#custom-bitcoin {
+	padding: 0;
+	font-size: 24px;
+	color: @bitcoin;
+}
+
+/* MODULES-CENTER */
+#clock {
+    color: @white-r;
+}
+
+/* MODULES-RIGHT */
+#cava {
+
+}
+
+#pulseaudio {
+    background: @black-r;
+    color: @white-r;
+}
+
+#network {
+    background: @black-r;
+    color: @white-r;
+}
+
+#battery {
+    background: @green;
+    color: @black-r;
+}
+
+#custom-power {
+	background: @black-r;
+	color: @white-r;
+}
