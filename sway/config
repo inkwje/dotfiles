@@ -26,7 +26,9 @@
 #
 	input type:keyboard {
 		xkb_layout it
+		xkb_numlock enabled
 	}
+	
 #
 # Names of inputs: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
@@ -167,7 +169,7 @@
 	    bindsym Return mode "default"
 	    bindsym Escape mode "default"
 	}
-
+#
 # Include configs from 3 locations:
 #  - /usr/share/sway/config.d
 #  - /etc/sway/config.d
