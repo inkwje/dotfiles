@@ -60,7 +60,6 @@
 		"format": "{icon}{volume}%",
 		"format-muted": " muted",
 		"format-icons": {
-			"speaker": " ",
 			"default": [" ", " ", " "],
 		},
 		"scroll-step": 10.0,
@@ -69,14 +68,12 @@
 	"network": {
 		"interval": 15,
 		"format-ethernet": " {bandwidthTotalBits}",
-		"format-wifi": "{icons}{essid} ({signalStrength}%)",
+		"format-wifi": " {essid} ({signalStrength}%)",
 		"format-disconnected": " Disconnected",
-		"format-icons": [" ", " ", " "],
 		"tooltip-format": " {bandwidthUpBits}\n {bandwidthDownBits}",
     },
     "battery": {
         "states": {
-            "warning": 70,
             "critical": 30,
         },
         "format": "{icon}{capacity}%",

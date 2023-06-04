@@ -3,10 +3,8 @@
 @define-color black-l	#4c4c4c;
 @define-color white-r	#ffffff;
 
-@define-color ice		#00edff;
-@define-color green		#8db800;
-@define-color yellow	#ffd800;
-@define-color red		#fe0000;
+@define-color green		#03d03d;
+@define-color red		#ce2031;
 
 @define-color bitcoin	#f7931a;
 @define-color fedora	#4e9bd5;
@@ -101,6 +99,16 @@
 #battery {
     background: @green;
     color: @black-r;
+}
+
+#battery.critical {
+	background: @red;
+	color: @white-r;
+}
+
+#battery.charging {
+	background: @black-r;
+	color: @white-r;
 }
 
 #custom-power {
