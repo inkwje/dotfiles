@@ -63,6 +63,7 @@
 			"default": [" ", " ", " "],
 		},
 		"scroll-step": 10.0,
+		"on-click-right": "~/.config/waybar/whq/audio-switcher.sh",
     },
 
 	"network": {
@@ -84,6 +85,6 @@
 	"custom/power": {
 		"tooltip": false,
 		"format": "",
-		"on-click": "~/.config/waybar/script/power.sh",
+		"on-click": "~/.config/waybar/whq/power-choose.sh",
 	},
 }
